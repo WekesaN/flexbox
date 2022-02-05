@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  /* basis act asthe property for the width */
+  /* flex-basis: 300px; */
+  /* flex grow shrink and basis */
+  flex: 1 0 0;
+  height: 100px;
+  background: #254de4;
+  margin: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #f4f4f4;
+  /* flex-wrap: wrap; */
+  /* justify-content: start;
+  align-items: flex-start;
+  flex-direction: column; */
+}
+
+.item:nth-of-type(1) {
+  /* order: 2; */
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+}
+
+.item:nth-of-type(2) {
+  /* align-self: center; */
+  /* order: 1; */
+  /* width of the flex */
+  /* flex-basis: 200px; */
+  /* flex-grow: 2; */
+  flex-shrink: 2;
+}
+
+.item:nth-of-type(3) {
+  /* align-self: flex-end; */
+  /* order: 3; */
+  /* grow acts like fractios */
+  /* flex-grow: 1; */
+  flex-shrink: 3;
+}
